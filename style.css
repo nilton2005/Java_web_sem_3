@@ -6,6 +6,7 @@ $breakpoint determines at which width the media query breakpoint will take effec
 
 html{
   margin-top: 0px!important;
+  height: 100%;
 }
 
 body {
@@ -14,6 +15,14 @@ body {
   font-weight: normal;
   line-height: 1.42857143;
   font-size: 16px;
+  height: 100%;
+}
+
+header {
+
+  position: sticky!important;
+  top: 0;
+  z-index: 1000;
 }
 nav {
   float: right;
@@ -37,9 +46,6 @@ nav ul li a {
   color: #463f3f;
   text-decoration: none;
   font-size: 20px;
-  /*
-  The full path of this code is nav ul li a:not(:only-child):after. This means that the code will apply to any a tag in our nav list that is NOT an only child, aka any dropdown. The :after means it comes after the output of the tag. I’ve decided that to specify any nav item as a dropdown, it will be followed by a unicode arrow – ▾ (#9662).
-  */
 
 }
 nav ul li a:hover {
@@ -179,16 +185,20 @@ add style for
   .navigation{
     padding-right: 100px;
     padding-left: 100px;
+    position:sticky!important;
   }
 }
 
 
-/* 
-.navigation – the outer wrapper for the navbar. Specifies the height and color, and will stretch the full width of the viewport.
-*/
+
+
 .navigation {
   height: 70px;
   background: #ffffff;
+  position: sticky!important;
+  top: 0;
+  z-index: 1000;
+
 }
 .nav-container {
   max-width: 100%;
