@@ -30,8 +30,41 @@ function assets(){
 
     wp_enqueue_script('boostraps','https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js', array('jquery', 'popper'),'5.3.3', true);
 
-    wp_enqueue_script('custom', get_template_directory_uri().'/assets/js/custom.js','', '1.2', false);
-    
+    wp_enqueue_script('custom', get_template_directory_uri().'/assets/js/custom.js','', '1.2', true);
+
+    // estos son los scripts que se cargaran en la pagina
+
+    wp_enqueue_script(
+        'masonry',
+        get_stylesheet_directory_uri().'/assets/js/masonry.pkgd.min.js',
+        '',
+        '1.0.2',
+        true
+    );
+
+    wp_enqueue_script(
+        'images-loaded',
+        get_stylesheet_directory_uri().'/assets/js/imagesloaded.pkgd.min.js',
+        '',
+        '1.0.2',
+        true
+    );
+
+    wp_enqueue_script(
+        'anime',
+        get_stylesheet_directory_uri().'/assets/js/anime.min.js',
+        '',
+        '1.0.2',
+        true
+    );
+
+    wp_enqueue_script(
+        'masonry-init',
+        get_stylesheet_directory_uri().'/assets/js/masonry-init.js',
+        '',
+        '1.0.2',
+        true
+    );
 }
 
 // Cargamo los estilo
@@ -54,3 +87,7 @@ function sidebar(){
 }
 
 add_action('widgets_init', 'sidebar');
+
+
+// Agregamos galeria de imagenes
+// Registrar Custom Post Type para el portafolio
