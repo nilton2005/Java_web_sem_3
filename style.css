@@ -255,6 +255,14 @@ footer .social-footer a{
     margin-right: 50px;
 }
 
+/* ---------------- style for content to the footer of the main ---------*/
+#block-9{
+  text-align: justify;
+  font-size: 1.10em;
+  font-family: 'HelveticaNeue LT 45', sans-serif;
+}
+
+
 /* style for whow images in home */
 
 

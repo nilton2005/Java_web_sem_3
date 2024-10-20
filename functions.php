@@ -88,6 +88,3 @@ function sidebar(){
 
 add_action('widgets_init', 'sidebar');
 
-
-// Agregamos galeria de imagenes
-// Registrar Custom Post Type para el portafolio
