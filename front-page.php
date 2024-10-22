@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Galería de Imágenes
+Template Name: Galería de imágenes
 */
 get_header();
 ?>
@@ -36,7 +36,7 @@ get_header();
             endwhile;
             wp_reset_postdata();
         else :
-            echo '<p>No hay entradas en la categoría Galería.</p>';
+            echo 'No hay entradas en la categoría Galería.';
         endif;
         ?>
     </div>

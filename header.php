@@ -20,11 +20,11 @@
             </div>
             <ul class="nav-list">
               <!-- Setting the links to #! will ensure that no action takes place on click. -->
-              <li><a href="#!">About</a></li>
-              <li><a href="#!">Services</a>
-              <li><a href="#!">Clients</a></li>
-              <li><a href="#!">News</a></li>
-              <li><a href="#!">Contact</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path('about')); ?>">About</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path('services')); ?>">Services</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path('clients')); ?>">Clients</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path('news')); ?>">News</a></li>
+                <li><a href="<?php echo get_permalink(get_page_by_path('contact')); ?>">Contact</a></li>
             </ul>
           </nav>
         </div>
