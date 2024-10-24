@@ -661,9 +661,84 @@ footer .social-footer a{
   }
 }
 
-@media only screen and(max-width: 425px){
+@media only screen and (max-width: 425px){
   .grid__item{
     margin: 0 0 -20 0;
 
   }
 }
+
+/* 
+Style for slider for page clients
+
+.testimonial => clients
+.testimonial-content =>  clients-content
+.testimonial .title => clients .title
+
+
+ */
+
+.client{
+  margin: 0 20px 40px;
+}
+
+.client-content{
+  padding: 20px 15px 20px 3px;
+  margin-bottom: 30px;
+  background: #f9f9f9;
+  position: relative;
+  
+}
+
+.client .client-content::before{
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  border-top: 15px solid #718076;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent; 
+}
+
+.client .client-content::after{
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  border-top: 15px solid #718076;
+  border-left: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.client .description{
+  font-size: 1.25em;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #000000;
+  margin: 0;
+}
+
+.client .title{
+  display: block;
+  font-size: 1em;
+  font-weight: 700;
+  color:#000000 ; 
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-left: 24px;
+}
+
+.owl-them .owl-controls{
+  margin-top: 10px;
+}
+
+.owl-theme .owl-controls .owl-page span{
+  background: #ccc;
+  opacity: 10;
+  transition:all 0.4s ease 0s;
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hove span{
+  background: blue;
+}
+
+
+

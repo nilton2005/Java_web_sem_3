@@ -20,5 +20,24 @@
       this.classList.toggle('active');
     });
   }); // end DOM ready
+
+  // js for the slider
+  $(document).ready(function(){
+    $("#client-slider").owlCarousel({
+      items:3,
+      itemDesktop:[1000,3],
+      itemsDesktopSmall:[980, 2],
+      itemsTablet:[768, 2],
+      itemsMobile:[680, 1],
+      pagination:true,
+      navigation:false,
+      slideSpeed:1500,
+      autoPlay:true
+    });
+  });
+
+
 })(jQuery); // end jQuery
 console.log("hello");
+
+
