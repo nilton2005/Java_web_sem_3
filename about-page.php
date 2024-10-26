@@ -16,28 +16,28 @@ Tenemos experiencia en materializar nuestras propuestas porque trabajamos en soc
         <div class="col-md-12">
             <div class="row">
 
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <ul class="list-inline"> 
                     <li >Gestion</li>
                     <li >Estrategia</li>
                     <li >Operaciones</li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <ul class="list-inline">
                     <li >Finanzas</li>
                     <li >Marketing</li>
                     <li >Recursos Humanos</li>
                     </ul> 
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <ul class="list-inline">
                     <li >Tecnología</li>
                     <li >Innovación</li>
                     <li >Desarrollo</li>
                     </ul>
                 </div>
-                <div class="col-md-3">
+                <div class="col-sm-3">
                     <ul class="list-inline">
                     <li >Diseño</li>
                     <li >Publicidad</li>
